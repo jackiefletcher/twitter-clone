@@ -5,7 +5,7 @@ Twitter.PostsController = Ember.ArrayController.extend ({
     save: function() {
       var newTweet = this.get('tweet');
       posts.addObject({
-        id: posts.length + 1,
+        id: (posts.length + 1).toString(),
         tweet: newTweet,
         date: new Date().toDateString(),
         date_value: new Date().getTime(),

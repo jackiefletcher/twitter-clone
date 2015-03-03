@@ -6,9 +6,11 @@
     <button class="btn btn-warning" {{action 'save'}}>Tweet!</button>
   </div>
 </form>
-
+<h2>Twwwweeeeeeeeeeeeeeets!</h2>
 <ul>
   {{#each}}
-    <li>{{tweet}}, {{date}}</li>
+    <li>{{#link-to 'date' this.id}}{{tweet}} {{date}}{{/link-to}}</li>
   {{/each}}
 </ul>
+
+{{outlet}}
