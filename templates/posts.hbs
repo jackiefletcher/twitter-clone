@@ -1,7 +1,7 @@
 <form>
   <div class="form-group">
     <label >Tweet About Somethin'</label>
-    {{input id="tweet" class="form-control" value=tweet}}
+    {{input id="tweet" class="form-control" value=tweet placeholder="Tweet" maxlength="141"}}
     <br>
     <button class="btn btn-warning" {{action 'save'}}>Tweet!</button>
   </div>
@@ -9,6 +9,6 @@
 
 <ul>
   {{#each}}
-    <li>{{tweet}}</li>
+    <li>{{tweet}}, {{date}}</li>
   {{/each}}
 </ul>
