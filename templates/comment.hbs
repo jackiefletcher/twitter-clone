@@ -1,0 +1,8 @@
+<form>
+  <div class="form-group">
+    <label >Comment On This Tweet</label>
+    {{input id="comment" class="form-control" value=comment placeholder="Comment" maxlength="141"}}
+    <br>
+    <button class="btn btn-warning" {{action 'addComment'}}>Add Comment</button>
+  </div>
+</form>

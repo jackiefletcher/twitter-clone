@@ -9,6 +9,7 @@ Twitter.PostsController = Ember.ArrayController.extend ({
         tweet: newTweet,
         date: new Date(),
         date_value: new Date().getTime(),
+        comments: []
       });
         this.set("tweet", "");
     }
